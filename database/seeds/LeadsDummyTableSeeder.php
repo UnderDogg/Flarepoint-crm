@@ -11,7 +11,7 @@ class LeadsDummyTableSeeder extends Seeder
      */
     public function run()
     {
-     factory(App\Models\Leads::class, 30)->create()->each(function($c){
+     factory(App\Models\Leads::class, 3000)->create()->each(function($c){
            
           });
     }

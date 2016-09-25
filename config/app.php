@@ -214,6 +214,9 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
+
+
+
         'Datatables' => Yajra\Datatables\Datatables::class,
         'Carbon'     => Carbon\Carbon::class,
         'Notifynder' => Fenos\Notifynder\Facades\Notifynder::class,
@@ -223,6 +226,12 @@ return [
         'role' => \Zizaco\Entrust\Middleware\EntrustRole::class,
         'permission' => \Zizaco\Entrust\Middleware\EntrustPermission::class,
         'ability' => \Zizaco\Entrust\Middleware\EntrustAbility::class,
+
+        'ExchangeWebServices' => EwsBridge\Facade\ExchangeWebServices::class
+
+
+
+
     ],
 
 ];
