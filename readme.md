@@ -7,38 +7,13 @@ Flarepoint is a new customer relationship management system (CRM) which purpose 
 ![page_design](https://cloud.githubusercontent.com/assets/15610490/16659700/903393ac-446b-11e6-969c-831fcd698a06.PNG)
 
 
-## Installation
+## Get started
 
+I would like to refer to the wiki, for help on getting started
 
-
-**How to**
-
-- Insert project into empty folder / git clone https://github.com/Bottelet/Flarepoint-crm.git
-- Create a empty database table
-- Copy the .env.example to .env and insert the Database config
-- Run the following commands
-```
-    composer install
-    php artisan migrate --seed
-    php artisan key:generate
-```
-- login in with these credentials  Mail: admin@admin.com Password: admin123 (Can be changed in the dashboard)
-- DONE
-
-**Insertion of dummy data**
-
-If you want to just play around and test the CRM, you can very easily insert dummy data after completeing the steps above, follow the commands below.
-
-```
-    php artisan db:seed --class=UsersDummyTableSeeder (Creates 5 extra users and are required)
-    php artisan db:seed --class=ClientsDummyTableSeeder (Creates 50 new clients)
-    php artisan db:seed --class=TasksDummyTableSeeder (Creates 130 tasks, requires clients & users seeding)
-    php artisan db:seed --class=LeadsDummyTableSeeder (Creates 30 leads, requires clients & users seeding)
-    
-```
-
-All of these will fill the datbase with client, tasks, leads etc, to give a fast example of how the CRM works, it is important, that nothing else is done as some of the data is inserted to work with a speific ID.
-
+* [Installation](https://github.com/Bottelet/Flarepoint-crm/wiki/Install)
+* [Installation with Docker](https://github.com/Bottelet/Flarepoint-crm/wiki/Install-using-Docker)
+* [Insertion of dummy data](https://github.com/Bottelet/Flarepoint-crm/wiki/Insertion-of-dummy-data)
 
 ## Features overview
 - Tasks management
@@ -69,6 +44,8 @@ And much more (in no particular order)
 
 ### Contribution Guide
 Flarepoint CRM follows [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard.
+
+Translation... You can help translating Flarepoint-crm into other languages, by copying the resources/lang/en folder into for example resources/lang/de and translate the files, found inside the folder.
 
 ### Packages
 The packages used are the following...
